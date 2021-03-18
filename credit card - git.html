@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Credit Card Form / CaptiveAire </title>
+<link href="credit-card-form.css" rel="stylesheet">
+</head>   
+
+<body>
+    <div class="credit_card_shape">
+        <p> Your Credit Card Number </p>
+        <div class="card_number" id="card-container">
+            <input type="password" class="input" id="card" placeholder="0000 0000 0000 0000"> 
+            <div id="logo"></div>
+        </div>
+        <p>Expiration Date (MM/YYYY) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    CVV2</p>
+        <div class="card_back_detail">   
+          <div class="expiry_date">
+          <select id="selMon" class = "expiry_date">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <select id="selYear" class = "expiry_date">
+            <option value="01">2021</option>
+            <option value="01">2022</option>
+            <option value="02">2023</option>
+            <option value="03">2024</option>
+            <option value="04">2025</option>
+            <option value="05">2026</option>
+            <option value="06">2027</option>
+            <option value="07">2028</option>
+            <option value="08">2029</option>
+            <option value="09">2030</option>
+            <option value="10">2031</option>
+        </select>
+        </div>
+          <div class="cvv">
+            <input type="password" class="cvv_input" data-mask="000" placeholder="000">
+            
+            <div class="cvv_img">
+                ?
+               <div class="img">
+                 <img src="https://images.myhelcim.com/img/pub/cvv-152064008867.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn">
+          pay
+        </div>
+    </div>
+
+
+<script src="validate-card-number.js"></script>
+
+</body>
+</html>
